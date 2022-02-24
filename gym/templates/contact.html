@@ -1,0 +1,46 @@
+{% extends 'navigationbar.html' %}
+{% load static %}
+{% block body %}
+<style>
+    .mydivstyle:hover{
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+        transform: translateY(-20px);
+
+    }
+    body{
+        /* background-color: rgb(221, 221, 221); */
+        /* background-blend-mode:calc(black,yellow,orange); */
+        background-image: linear-gradient(to right,yellow 0%,red 75%);
+    }
+
+</style>
+    
+<div class="container" style="margin-top: 50px;">
+<h2 class="text-center" style="color: white;">CONTACT US</h2>
+<br><br>
+<div class="row mt-5 text-center">
+    <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4><i class="fas fa-phone-square"></i>Contact</h4>
+        <p class="mt-3 font-weight-bold"><a href="tel:+91 0000000000" class="text-white">+91 0000000000</a></p>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4><i class="fas fa-envelope"></i>Email</h4>
+        <p class="mt-3 font-weight-bold"><a href="mailto:yashbhatter2001@gmail.com" class="text-white">yashbhatter2001@gmail.com</a></p>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4><i class="fas fa-address-book" style="color: white;"></i>Office Address</h4>
+        <p class="mt-3 font-weight-bold"><a href="https://goo.gl/maps/yLemo5bsPyogZHWn6 " class="text-white">Chakradharpur,Jharkhand</a></p>
+    </div>
+
+        <div class="col-lg-3 col-sm-6 mydivstyle">
+        <h4><i class="fas fa-address-card"></i>Office Address</h4>
+        <p class="mt-3 font-weight-bold"><a href="https://goo.gl/maps/yLemo5bsPyogZHWn6 " class="text-white">Chakradharpur,Jharkhand</a></p>
+    </div>
+
+
+</div>
+</div>
+
+{% endblock %}

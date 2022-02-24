@@ -1,0 +1,36 @@
+{% extends 'navigationbar.html' %}
+{% block body %}
+{% ifequal error "no" %}
+<script>
+    alert("Logged in successfully");
+    window.location = ('{% url "home" %}');
+</script>
+{% endifequal %}
+
+{% ifequal error "yes" %}
+<script>
+    alert("Invalid Login Credentials, Try Again");
+</script>
+{% endifequal %}
+
+
+
+<div class="container" style="margin-top:60px">
+
+<h2 class="text-center text-primary font-weight-bold">Admin Login</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for=""><b>Admin Name</b></label>
+        <input type="text" name="uname" class="form-control">
+
+        <label for=""><b>Password</b></label>
+        <input type="text" name="pwd" class="form-control">
+
+        <br>
+
+        <input type="submit" value="LOGIN" class="form-control btn btn-primary">
+
+    </form>
+</div>
+
+{% endblock %}

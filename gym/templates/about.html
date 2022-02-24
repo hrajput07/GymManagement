@@ -1,0 +1,30 @@
+{% extends 'navigationbar.html' %}
+{% block body %}
+{% load static %}
+    
+
+<div class="container" style="margin-top:60px">
+
+ <h2 class="text-center text-primary font-weight-bold">ABOUT US</h2>
+ <br><br><br><br>
+ <div class="row">
+     <div class="col-sm-4 text-center">
+         <img src="{% static 'images/about_us.jpg' %}" alt="" width="300" height="300" img-responsive>
+
+
+     </div>
+     <div class="col-sm-8 text-center mt-5">
+         Hello Friends <br>
+         This is Simple Gym Management Project developed by Yash Bhatter using HTML,CSS,DJANGO,JAVASCRIPT,BOOTSTRAP & PYTHON....
+         
+
+    </div>
+ </div>
+ </div>
+ <br><br><br>
+
+ <footer class="text-center font-weight-bold mt-5" >
+    <h3>Copyright &copy; 2022 , All Rights Reserved</h3> 
+ </footer>
+
+{% endblock %}
